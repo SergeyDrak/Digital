@@ -1,0 +1,41 @@
+{% extends '@subscription/base.html.twig' %}
+
+{% block title %}List subscribers{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Subscribers</h1>
+    <div class="text-center icon-sub"><i class="fas fa-database"></i></div>
+    {% if header == false %}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>category</th>
+            </tr>
+            </thead>
+        </table>
+        <p>There are no subscribers.</p>
+    {% else %}
+        <table class="table table-subscribers">
+            <thead>
+            <tr>
+                {% for key, value in header %}
+                    <th class="sort link-table-{{ value }}">{{ value }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for key , value in data %}
+                <tr class="row-{{ key }}">
+                    {% for key , item in value %}
+                        <td class="coll-{{ key }}"> {{ item }} </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    {% endif %}
+
+{% endblock %}

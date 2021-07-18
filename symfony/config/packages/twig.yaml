@@ -1,0 +1,9 @@
+twig:
+    form_themes: ['bootstrap_5_layout.html.twig']
+    default_path: '%kernel.project_dir%/templates'
+#    layouts/wts_form_horizontal_layout.html.twig
+    paths:
+        '%kernel.project_dir%/.bundles/SubscriptionBundle/templates': subscription
+when@test:
+    twig:
+        strict_variables: true

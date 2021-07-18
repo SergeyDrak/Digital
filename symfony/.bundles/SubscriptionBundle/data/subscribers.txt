@@ -1,0 +1,6 @@
+{"name":"Antonio","email":"ander@gmail.com","category":"iPad"}
+{"name":"Boris","email":"borneo@mail.ru","category":"iPhone"}
+{"name":"wrangler","email":"col@mail.ru","category":"iPad"}
+{"name":"ffff","email":"xxx@gmail.com","category":"iPhone"}
+{"name":"dron777","email":"drupal.route@gmail.com","category":"iPhone"}
+{"name":"Lourens","email":"drupal333.route@gmail.com","category":"iPhone"}

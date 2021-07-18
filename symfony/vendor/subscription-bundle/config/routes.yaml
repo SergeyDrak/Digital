@@ -1,0 +1,3 @@
+subsctiption_routes:
+  type: annotation
+  resource: '../src/Controller/'
