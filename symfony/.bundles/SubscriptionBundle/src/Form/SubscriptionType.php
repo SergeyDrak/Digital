@@ -107,16 +107,20 @@ class SubscriptionType extends AbstractType
         $form = $context->getRoot();
         $data = $form->getData();
         $array_data = $this->rider->readLineByLine();
+if($array_data !== false){
+    foreach ($array_data as $value) {
+        $mark = array_search($data['email'],$value);
+    }
 
-        foreach ($array_data as $value) {
-                $mark = array_search($data['email'],$value);
-        }
+    if ($mark !== false) {
+        $context
+          ->buildViolation('The entered email is present in the system.')
+          ->addViolation();
+    }
+}
 
-        if ($mark !== false) {
-            $context
-              ->buildViolation('The entered email is present in the system.')
-              ->addViolation();
-        }
+
+
     }
 
     public function configureOptions(OptionsResolver $resolver)
