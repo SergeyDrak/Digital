@@ -55,7 +55,6 @@ class SubscribersListController extends AbstractController
         }else{
             $this->header = false;
         }
-        dump($this->raw_data_twig);
 
         return $this->render(
           '@subscription/subscription_list.html.twig',
