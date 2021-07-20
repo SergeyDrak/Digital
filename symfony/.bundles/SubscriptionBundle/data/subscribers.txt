@@ -1,1 +1,0 @@
-{"name":"Antonio","email":"ander@gmail.com","category":"iPad"}

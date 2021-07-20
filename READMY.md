@@ -25,6 +25,8 @@
 
 ✨ Magic ✨
 
+https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/SergeyDrak/Digital.git
+
 ## Features
 
 - Decorated as a bundle. Code here(./bundles)
